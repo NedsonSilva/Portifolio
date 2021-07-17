@@ -22,6 +22,10 @@
    margin-top: 4rem;
 }
 
+.skills-list li {
+   padding: 0 .5rem;
+}
+
 .skills-list img {
    width: 100px;
    height: 100px;
@@ -47,4 +51,3 @@
 .list-contacts li:last-child img {
    float: left;
 }
-

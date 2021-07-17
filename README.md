@@ -3,7 +3,7 @@
 Meu portfólio criado com o objetivo de mostrar meus projetos e currículo.
 ![screenshot](./assets/img/screenshot.png)
 
-Você pode ver o projeto no ar clicando [aqui](https://www.google.com.br)
+Você pode ver o projeto no ar clicando [aqui](https://nedsonsilvadev.vercel.app/)
 
 ### Construído com
 

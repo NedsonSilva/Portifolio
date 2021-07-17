@@ -9,7 +9,8 @@
    box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
    overflow-x: hidden;
 }
 
@@ -47,7 +48,7 @@ main {
 
 .titles {
    text-align: center;
-   font-size: 2rem;
+   font-size: min(7.5vw, 2rem);
    margin: 5rem 0;
 }
 
@@ -68,11 +69,12 @@ main {
 #intro h3 {
    width: max-content;
    color: var(--color-main);
-   margin-bottom: -5px;
+   margin-bottom: -.5rem;
+   font-size: min(5.5vw, 1.2rem);
 }
 
 #intro h2 {
-   font-size: 2.1rem;
+   font-size: min(8vw, 2.1rem);
 }
 
 #intro p {
@@ -135,7 +137,7 @@ main {
 }
 
 .container-sobre h3 {
-   font-size: 1.5rem;
+   font-size: calc(7vw, 1.5rem);
    margin-bottom: 2rem;
 }
 
@@ -168,7 +170,7 @@ main {
 }
 
 .skills-list h3 {
-   font-size: 1.1rem;
+   font-size: calc(7vw, 1.1rem);
    font-weight: normal;
    margin-bottom: .5rem;
 }
@@ -278,7 +280,7 @@ footer {
    line-height: 100px;
    height: 100px;
    background: #1A222D;
-   font-size: 1.3rem;
+   font-size: calc(7vw, 1.3rem);
    border-bottom: 8px solid var(--color-main);
 }
 
