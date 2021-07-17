@@ -1,0 +1,50 @@
+#intro {
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: space-evenly;
+   height: calc(100vh - 150px);
+   row-gap: 3rem;
+   margin-top: 1rem;
+}
+
+#intro img {
+   width: min(70vw, 500px);
+   margin: 0 auto;
+}
+
+#sobre-min {
+   flex-direction: column;
+   margin: 2rem 0;
+}
+
+
+#sobre-min .titles {
+   margin-top: 4rem;
+}
+
+.skills-list img {
+   width: 100px;
+   height: 100px;
+}
+
+.skills-list h3 {
+   margin-top: 1rem;
+}
+
+#laboratorio div {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.list-contacts {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   row-gap: 3rem;
+}
+
+.list-contacts li:last-child img {
+   float: left;
+}
+
