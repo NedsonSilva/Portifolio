@@ -1,10 +1,18 @@
+header {
+   position: fixed;
+   top: -2px;
+   width: 100%;
+   background: var(--bg-main);
+   z-index: 10;
+}
+
 #intro {
    display: flex;
    flex-direction: column-reverse;
    justify-content: space-evenly;
-   height: calc(100vh - 150px);
+   height: calc(100vh - 100px);
    row-gap: 3rem;
-   margin-top: 1rem;
+   margin-top: 3rem;
 }
 
 #intro img {

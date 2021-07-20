@@ -10,7 +10,15 @@ function animationScroll() {
    target.forEach(element => {
       if (windowTop > element.offsetTop) element.classList.add('animate')
    })
+   toggleMenu(false)
 }
+
+animationScroll()
+
+window.addEventListener('scroll', () => {
+   clearTimeout(timer)
+   timer = setTimeout(animationScroll, 20)
+})
 
 function smoothScroll(event) {
    event.preventDefault()
@@ -22,19 +30,17 @@ function smoothScroll(event) {
    })
 }
 
-animationScroll()
-
-window.addEventListener('scroll', () => {
-   clearTimeout(timer)
-   timer = setTimeout(animationScroll, 20)
-})
-
 innerLinks.forEach(link => link.addEventListener('click', smoothScroll))
 
-function toggleMenu() {
-   const linesSvg = humburguer.children
-   Array.from(linesSvg).forEach(line => line.classList.toggle('active'))
-   menu.classList.toggle('menu-mobile')
+function toggleMenu(toggle = true) {
+   const linesSvg = Array.from(humburguer.children)
+   if (toggle) {
+      linesSvg.forEach(line => line.classList.toggle('active'))
+      menu.classList.toggle('menu-mobile')
+   } else {
+      linesSvg.forEach(line => line.classList.remove('active'))
+      menu.classList.remove('menu-mobile')
+   }
 }
 
 humburguer.addEventListener('click', toggleMenu)

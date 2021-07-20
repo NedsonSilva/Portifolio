@@ -9,11 +9,6 @@
    box-sizing: border-box;
 }
 
-html,
-body {
-   overflow-x: hidden;
-}
-
 body {
    font-family: 'Poppins', sans-serif;
    background: var(--bg-main);
@@ -41,9 +36,15 @@ main {
    margin: 0 auto;
 }
 
+header {
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
 main {
    display: grid;
    grid-template: repeat(5, auto) / 1fr;
+   overflow-x: hidden;
 }
 
 .titles {
