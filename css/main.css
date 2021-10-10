@@ -190,7 +190,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  max-width: 340px;
+  max-width: 320px;
   max-height: min-content;
   background: #2b3443;
   border-radius: 15px;
@@ -212,7 +212,7 @@ main {
 #laboratorio article > img {
   border-radius: 15px;
   width: 100%;
-  height: 280px;
+  height: 250px;
   margin-bottom: 2.2rem;
 }
 
@@ -229,6 +229,10 @@ main {
 .visit-link {
   margin-top: auto;
   opacity: 0.9;
+}
+
+.visit-link:hover {
+  text-decoration: underline;
 }
 
 .visit-link img {
