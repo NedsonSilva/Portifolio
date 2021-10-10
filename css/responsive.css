@@ -1,61 +1,61 @@
 header {
-   position: fixed;
-   top: -2px;
-   width: 100%;
-   background: var(--bg-main);
-   z-index: 10;
+  position: fixed;
+  top: -2px;
+  width: 100%;
+  background: var(--bg-main);
+  z-index: 10;
 }
 
 #intro {
-   display: flex;
-   flex-direction: column-reverse;
-   justify-content: space-evenly;
-   height: calc(100vh - 100px);
-   row-gap: 3rem;
-   margin-top: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  height: calc(100vh - 100px);
+  row-gap: 3rem;
+  margin-top: 3rem;
 }
 
 #intro img {
-   width: min(70vw, 500px);
-   margin: 0 auto;
+  width: min(70vw, 500px);
+  margin: 0 auto;
 }
 
 #sobre-min {
-   flex-direction: column;
-   margin: 2rem 0;
+  flex-direction: column;
+  margin: 2rem 0;
 }
 
-
 #sobre-min .titles {
-   margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .skills-list li {
-   padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
 .skills-list img {
-   width: 100px;
-   height: 100px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
 
 .skills-list h3 {
-   margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 #laboratorio div {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .list-contacts {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   row-gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 3rem;
 }
 
 .list-contacts li:last-child img {
-   float: left;
+  float: left;
 }
