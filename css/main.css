@@ -129,6 +129,7 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  column-gap: 10px;
 }
 
 .skills-list li {
@@ -264,6 +265,11 @@ main {
 .list-contacts a {
   padding: 10px 10px 10px 0;
   transition: color 0.3s;
+}
+
+.list-contacts li:last-child a {
+  display: flex;
+  align-items: center;
 }
 
 .list-contacts a:hover {

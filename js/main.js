@@ -2,6 +2,7 @@ const targetAnimation = document.querySelectorAll('[data-animation]')
 const innerLinks = document.querySelectorAll('.menu a[href^="#"]')
 const humburguer = document.querySelector('.humburguer svg')
 const menu = document.querySelector('.menu')
+const shadowContainer = document.querySelector('.shadow-container')
 let timer = 0
 
 function animationScroll() {
@@ -41,10 +42,18 @@ function handleToggleMenu(toggle = true) {
   if (toggle) {
     linesSvg.forEach(line => line.classList.toggle('active'))
     menu.classList.toggle('menu-mobile')
+    shadowContainer.classList.toggle('active')
   } else {
     linesSvg.forEach(line => line.classList.remove('active'))
-    menu.classList.remove('menu-mobile')
+    this.removeMenu()
   }
 }
 
+function removeMenu() {
+  menu.classList.remove('menu-mobile')
+  menu.classList.remove('menu-mobile')
+  shadowContainer.classList.remove('active')
+}
+
 humburguer.addEventListener('click', handleToggleMenu)
+shadowContainer.addEventListener('click', removeMenu)

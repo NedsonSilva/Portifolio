@@ -5,6 +5,20 @@ header {
   background: var(--bg-main);
 }
 
+.shadow-container {
+  display: none;
+}
+
+.shadow-container.active {
+  display: block;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.555);
+}
+
+
 .logo {
   width: min(35vw, 170px);
 }
@@ -101,7 +115,7 @@ header {
     background: var(--bg-main);
     text-align: center;
     transform: translateX(70%) scaleX(0);
-    transition: linear 0.4s;
+    transition:  0.3s;
     z-index: 10;
   }
 
