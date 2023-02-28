@@ -126,10 +126,10 @@ main {
 
 .skills-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 10px;
+  gap: 1rem;
 }
 
 .skills-list li {

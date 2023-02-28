@@ -25,3 +25,16 @@ a {
    color: white;
    text-decoration: none;
 }
+
+.font-bold {
+   font-weight: 600;
+}
+
+.hover-unterline:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.cursor-pointer {
+   cursor: pointer;
+}
